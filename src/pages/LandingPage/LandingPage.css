@@ -1,0 +1,151 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x:hidden
+    
+}
+
+/* Header and Navigation Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1px 0;
+    background-color: #ffffff; /* Light background for the whole header */
+}
+
+
+
+.logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    display: right;
+    
+}
+
+
+
+nav {
+    background-color: #4c5a32; /* Green background */
+    padding: 15px 100px;
+    border-radius: 0px 0px 20px 20px; /* Fully round the corners */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 200px;
+    width: 100%;
+}
+
+.quote {
+    flex: 1;
+    
+    /* "Filipino cuisine is a vibrant blend of bold flavors, rich traditions, and diverse influences, offering a unique culinary experience that reflects the country's history and culture." */
+height: 102px;
+left: 410px;
+top: 173px;
+
+font-family: 'Inria Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
+text-align: center;
+
+color: #000000;
+
+
+}
+
+.quote p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: justify;
+}
+
+
+
+
+
+
+/* Green Rectangle */
+.green-rectangle {
+    width: 300px;
+    height: 500px;
+    background-color: #4A5638;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 20px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+.recipe {
+flex: 1; 
+    
+/* "Filipino cuisine is a vibrant blend of bold flavors, rich traditions, and diverse influences, offering a unique culinary experience that reflects the country's history and culture." */
+height: 102px;
+left: 410px;
+top: 173px;
+
+font-family: 'Inria Serif';
+font-style: bold;
+font-weight: 400;
+font-size: 70px;
+line-height: 38px;
+
+
+color: #000000;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .graphic img {
+        margin-top: 20px;
+    }
+}
